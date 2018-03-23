@@ -12,19 +12,27 @@ var config = {
         filename: 'bundle.js'
     },
     module : {
-        loaders : [
+        rules: [
             {
-                test : /\.js?/,
-                include : APP_DIR,
-                loader: 'babel'
+                test: /\.js?/,
+                include: APP_DIR,
+                use: {
+                    loader: 'babel-loader'
+                }
             },
             {
                 test: /\.json$/,
-                loader: 'json'
+                use: {
+                    loader: 'json-loader'
+                }
             },
             {
                 test: /\.scss$/,
-                loaders: ["style", "css", "sass"]
+                use: [
+                    { loader: 'style-loader' },
+                    { loader: 'css-loader' },
+                    { loader: 'sass-loader' }
+                ]
             }
         ]
     },
