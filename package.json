@@ -38,7 +38,7 @@
     "webpack-cli": "^3.3.8"
   },
   "scripts": {
-    "build": "./node_modules/.bin/.webpack",
+    "build": "./node_modules/.bin/webpack",
     "start": "./node_modules/.bin/webpack-dev-server --hot --inline --watch-poll",
     "test": "./node_modules/.bin/mocha --recursive --compilers js:babel-core/register",
     "test-watch": "./node_modules/.bin/mocha --recursive --compilers js:babel-core/register --watch --reporter min",

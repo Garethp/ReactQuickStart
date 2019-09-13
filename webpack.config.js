@@ -5,6 +5,7 @@ const BUILD_DIR = path.resolve(__dirname, 'build');
 const APP_DIR = path.resolve(__dirname, 'src');
 
 const config = {
+  mode: 'development',
   entry: [`${APP_DIR}/index.jsx`, 'webpack-dev-server/client?http://localhost:8080/'],
   output: {
     path: BUILD_DIR,
