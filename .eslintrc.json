@@ -1,0 +1,13 @@
+{
+  "extends": "airbnb",
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "react/jsx-tag-spacing": 0,
+    "react/jsx-one-expression-per-line": 0,
+    "react/no-unescaped-entities": 0
+  }
+}
